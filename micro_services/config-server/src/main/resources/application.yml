@@ -1,0 +1,18 @@
+server:
+  port:
+    6000
+spring:
+  application:
+    name: springboot-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/just-abdulah-dev/prop-config-store
+          default-label: main
+
+    logging:
+      level:
+        org.springframework.cloud: DEBUG
+
+
